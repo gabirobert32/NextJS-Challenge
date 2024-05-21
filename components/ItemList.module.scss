@@ -1,0 +1,58 @@
+.listContainer {
+  background-color: #ffffff;
+  max-width: 1180px;
+  margin: 30px auto;
+  border-radius: 4px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+
+  .itemContainer {
+    display: flex;
+    padding: 16px 0 10px 0;
+    width: calc(100% - 32px); /* Adjust width to account for margins */
+    border-bottom: 2px solid #eeeeee;
+    margin: 0 16px 0 16px;
+    box-sizing: border-box;
+
+    .descriptionContainer {
+      display: flex;
+      flex-direction: column;
+      margin-left: 16px;
+      .price {
+        color: #333333;
+        text-decoration: none;
+        font-size: 24px;
+        margin: 35px 0 20px 0;
+        display: flex;
+
+        .freeShippingContainer {
+          height: 22px;
+          width: 22px;
+          background-color: rgb(49, 202, 49);
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 15px;
+        }
+      }
+      .title {
+        font-size: 18px;
+        max-width: 500px;
+        margin: 0;
+        color: #333333;
+        text-decoration: none;
+        @media (max-width: 768px) {
+          font-size: 16px;
+          width: 100%;
+          height: 70px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
+}

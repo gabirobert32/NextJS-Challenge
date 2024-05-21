@@ -1,0 +1,47 @@
+.searchBarContainer {
+  background-color: #ffe600;
+
+  header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    max-width: 1180px;
+    margin: 0 auto;
+
+    .mlLogo {
+      padding-top: 5px;
+    }
+  }
+
+  .searchInput {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 4px 0 0 4px;
+    margin-left: 20px;
+
+    &:focus {
+      outline: none; // Removes the outline
+      border: none; // Removes the border
+    }
+  }
+
+  // input:focus {
+  //   outline: none; /* Removes the outline */
+  //   border: none; /* Removes the border */
+  // }
+
+  .searchButton {
+    padding: 8px 12px;
+    border: none;
+    background-color: #eeeeee;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+
+    img {
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
